@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  background: #0f0f0f;
+  color: #e0e0e0;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Login */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.login-box {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 16px;
+  padding: 40px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6b35;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.login-subtitle {
+  text-align: center;
+  color: #888;
+  margin-bottom: 32px;
+  font-size: 14px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  color: #aaa;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 14px 16px;
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input:focus {
+  border-color: #ff6b35;
+}
+
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  background: #ff6b35;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-primary:hover {
+  background: #e55a2b;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-msg {
+  color: #ff4444;
+  font-size: 13px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+/* Dashboard */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #222;
+  margin-bottom: 24px;
+}
+
+.header h1 {
+  font-size: 22px;
+  color: #ff6b35;
+}
+
+.header .user-name {
+  font-size: 14px;
+  color: #888;
+}
+
+.header button {
+  background: transparent;
+  border: 1px solid #333;
+  color: #888;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.header button:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+/* Cards */
+.atividades-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.atividade-card {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 12px;
+  padding: 20px;
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.1s;
+}
+
+.atividade-card:hover {
+  border-color: #ff6b35;
+  transform: translateY(-1px);
+}
+
+.atividade-card .title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.atividade-card .meta {
+  display: flex;
+  gap: 16px;
+  font-size: 13px;
+  color: #888;
+}
+
+.atividade-card .badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-em-correcao {
+  background: #ff6b3520;
+  color: #ff6b35;
+}
+
+.badge-corrigido {
+  background: #22c55e20;
+  color: #22c55e;
+}
+
+.badge-pendente {
+  background: #f59e0b20;
+  color: #f59e0b;
+}
+
+/* Atividade Detalhe */
+.atividade-detalhe {
+  background: #1a1a1a;
+  border: 1px solid #2a2a2a;
+  border-radius: 16px;
+  padding: 32px;
+}
+
+.atividade-detalhe h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.atividade-detalhe .desc {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.pergunta-box {
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 24px;
+}
+
+.pergunta-box h3 {
+  font-size: 16px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.pergunta-box p {
+  color: #aaa;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 16px;
+}
+
+.checkbox-option {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 16px;
+  background: #1a1a1a;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.checkbox-option:hover {
+  border-color: #555;
+}
+
+.checkbox-option.selected-sim {
+  border-color: #22c55e;
+  background: #22c55e10;
+  color: #22c55e;
+}
+
+.checkbox-option.selected-nao {
+  border-color: #ef4444;
+  background: #ef444410;
+  color: #ef4444;
+}
+
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: none;
+  color: #888;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  color: #ff6b35;
+}
+
+.loading {
+  text-align: center;
+  padding: 60px;
+  color: #888;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 60px;
+  color: #666;
+}
+
+.empty-state p {
+  font-size: 15px;
+}
+
+/* Modo Lote - Checkbox */
+.atividade-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.2s;
+}
+
+.atividade-card:hover {
+  border-color: #ff6b35;
+  transform: translateY(-1px);
+}
+
+.atividade-card .checkbox-area {
+  cursor: pointer;
+  color: #555;
+  transition: color 0.2s;
+}
+
+.atividade-card .checkbox-area:hover {
+  color: #ff6b35;
+}
+
+.atividade-card .checkbox-area.checked {
+  color: #22c55e;
+}
+
+/* Botão de ação em massa */
+.btn-bulk {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+}
+
+.btn-bulk-primary {
+  background: #22c55e;
+  color: #fff;
+}
+
+.btn-bulk-primary:hover {
+  background: #1ea84d;
+}
+
+.btn-bulk-primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn-bulk-secondary {
+  background: transparent;
+  border: 1px solid #444;
+  color: #888;
+}
+
+.btn-bulk-secondary:hover {
+  border-color: #ff6b35;
+  color: #ff6b35;
+}
+
+/* Alerta de sucesso */
+.alert-success {
+  background: #22c55e20;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  padding: 12px 16px;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
